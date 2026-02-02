@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  axiom-agent:
+    build: .
+    container_name: axiom-digital-worker
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ENV=production
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    # Security contexts
+    security_opt:
+      - no-new-privileges:true
+    # Resource limits (demonstrating "The Vault" efficiency)
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
