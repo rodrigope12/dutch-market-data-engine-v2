@@ -26,4 +26,4 @@ git clone https://github.com/rodrigope12/ntherlands_2.git
 ```
 
 ---
-*Developed by Rodrigo Perez Cordero. Part of professional portfolio.*
+*Developed by **[Rodrigope12](https://github.com/rodrigope12)**. Part of professional portfolio.*
